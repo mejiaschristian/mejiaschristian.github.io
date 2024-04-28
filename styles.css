@@ -74,6 +74,7 @@ nav a {
   font-size: 20px;
   display: block;
   padding: 15px 20px; /* Increased padding for better touch experience */
+  transition: color 0.3s;
 }
 
 nav a:hover {
@@ -143,6 +144,13 @@ blockquote {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-1 h2 {
+  font-size: 30px; /* Increased font size for emphasis */
+  text-align: left;
+  letter-spacing: 1px; /* Slightly reduced letter-spacing for better readability */
+  line-height: 1.3; /* Adjusted line height for better vertical spacing */
 }
 
 .text-description {
