@@ -283,6 +283,24 @@ blockquote {
   padding: 0;
 }
 
+.soc-med {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.soc-med a {
+  color: #ffff;
+  transition: text-shadow color 0.3s ease;
+}
+
+.soc-med a:hover {
+  color: #1a9c73;
+  text-shadow: 0px 0px 3px #1a9c73;
+}
+
 .img-cont {
   padding: 15px 15px 0px;
 }
