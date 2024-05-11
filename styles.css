@@ -545,8 +545,13 @@ footer {
     flex-direction: column;
   }
   .achievement {
-    overflow: auto;
     box-shadow: inset 0 -20px 15px -25px #ffffff;
+  }
+  .achievement h2 {
+    font-size: 18px;
+  }
+  .achievement p {
+    font-size: 14px;
   }
   .main-essay-container {
     flex-direction: column;
