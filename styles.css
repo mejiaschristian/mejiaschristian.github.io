@@ -444,11 +444,11 @@ footer {
   align-items: center;
   justify-content: center;
   margin: 0 auto;
+  gap: 20px;
 }
 
 .achievement {
   text-align: center;
-  margin-top: 10px;
   max-width: 600px;
   max-height: 200px;
   padding: 20px;
