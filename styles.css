@@ -529,6 +529,10 @@ footer {
   margin-top: 15px;
 }
 
+.solo-h1 {
+  padding: 10px;
+}
+
 .main-essay-container {
   display: flex;
   flex-direction: row;
@@ -537,18 +541,22 @@ footer {
   background-color: #3333338a;
   padding: 20px;
   margin: 0 auto;
+  box-shadow: 0 0 10px #0000001a;
+  border-radius: 8px;
 }
 
 .main-essay-container img {
   border-radius: 8px;
-  width: 400px;
-  height: 550px;
+  width: 100%;
+  max-width: 400px;
+  height: 450px;
   object-fit: cover;
+  margin-right: 20px;
 }
 
 .essay-cont {
   padding: 20px;
-  max-width: 45%;
+  flex: 1;
 }
 
 @media (max-width: 810px) {
