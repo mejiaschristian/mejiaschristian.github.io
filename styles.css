@@ -530,21 +530,25 @@ footer {
 }
 
 .main-essay-container {
-  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
   background-color: #3333338a;
+  padding: 20px;
+  margin: 0 auto;
 }
 
 .main-essay-container img {
-  width: 300px;
-  height: 400px;
+  border-radius: 8px;
+  width: 400px;
+  height: 550px;
   object-fit: cover;
 }
 
-.essay-cont p {
-  padding: 10px;
+.essay-cont {
+  padding: 20px;
+  max-width: 45%;
 }
 
 @media (max-width: 810px) {
@@ -618,9 +622,11 @@ footer {
   }
   .main-essay-container {
     flex-direction: column;
+    padding: 10px;
   }
   .main-essay-container img {
-    width: 100%;
+    width: 80%;
+    height: 400px;
   }
   .essay-cont {
     padding: 10px;
