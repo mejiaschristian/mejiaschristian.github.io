@@ -41,6 +41,12 @@
           <h2>
             <i class="fa fa-info-circle" style="font-size: 24px"></i> About
           </h2>
+          <div class="resume">
+            <div class="achievement ach-6" onclick="toggleAchievement(this)">
+              <h2>My Resume</h2>
+              <img src="imgs/Mejias - RESUME.jpg" alt="WIP at SkillSandbox" />
+            </div>   
+          </div>
           <div class="main-essay-container">
             <img src="imgs/wip.jpg" alt="me at work immersion program :)" />
             <div class="essay-cont">
@@ -88,5 +94,10 @@
         </div>
       </main>
     </div>
+    <script>
+      function toggleAchievement(element) {
+        element.classList.toggle("expanded");
+      }
+    </script>
   </body>
 </html>
