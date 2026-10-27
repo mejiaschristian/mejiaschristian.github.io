@@ -1,4 +1,4 @@
-function Header() {
+function About() {
     return (
         <header>
             <div className="greetings text-muted mb-3">
@@ -36,4 +36,4 @@ function Header() {
     );
 }
 
-export default Header;
+export default About;

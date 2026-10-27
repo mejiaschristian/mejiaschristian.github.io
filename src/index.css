@@ -19,23 +19,21 @@ html {
     --color-text-light: #eeeeee;
 }
 
-main {
-    width: 100%;
-}
-
-.navbar {
-    background-color: var(--color-primary-dark);
-}
-
-header,
-.projects,
-.certifications,
-.contacts {
-    padding: 10px;
+.container {
     min-height: 100vh;
-    max-width: 750px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+main {
+    margin: 15px 20px 0px 20px;
+    width: 750px;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: center;
     justify-content: center;
 }
 
@@ -63,10 +61,17 @@ header,
     object-fit: cover;
 }
 
+.mobile-bottom-nav {
+    display: none;
+}
+
 .table-of-contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: sticky;
-    top: 350px;
-    height: max-content;
+    top: 0;
+    height: 100vh;
 }
 
 .table-of-contents ul {
@@ -87,5 +92,48 @@ header,
 
 .table-of-contents a.link-active {
     color: var(--color-primary-light);
-    text-decoration: underline;
+    transform: translateY(15px);
+}
+
+@media (width <= 480px) {
+    main {
+        width: auto;
+        padding-bottom: 80px; /* Prevents the last section from getting trapped under the navbar */
+    }
+
+    .table-of-contents {
+        display: none;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    /* Modern App-Style Bottom Navigation */
+    .mobile-bottom-nav {
+        display: flex;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: var(--color-primary-dark);
+        justify-content: space-around;
+        align-items: center;
+        padding: 15px 5px;
+        z-index: 1000;
+        border-top: 1px solid var(--color-secondary-dark);
+    }
+
+    .mobile-bottom-nav a {
+        text-decoration: none;
+        color: var(--color-text-light);
+        font-size: 0.85rem;
+        font-weight: 500;
+        transition: color 0.3s ease;
+    }
+
+    /* Active State for Mobile Links */
+    .mobile-bottom-nav a.link-active {
+        color: var(--color-primary-light);
+    }
 }

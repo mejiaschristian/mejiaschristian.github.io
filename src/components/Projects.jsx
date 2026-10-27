@@ -2,7 +2,7 @@ import ProjectCard from "./ItemCard";
 
 function Projects() {
     return (
-        <div>
+        <div className="projects">
             <div className="section-header mb-3">
                 <h2 id="projects">Projects and Contributions</h2>
                 <small className="text-muted">
