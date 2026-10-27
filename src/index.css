@@ -23,12 +23,12 @@ html {
     min-height: 100vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: flex-start;
 }
 
 main {
-    margin: 0px 20px 0px 20px;
+    padding: 20px;
     width: 750px;
     min-height: 100vh;
     display: flex;
@@ -110,6 +110,10 @@ main {
     main {
         width: auto;
         padding-bottom: 80px;
+    }
+
+    .projects {
+        margin: 0;
     }
 
     .table-of-contents {
