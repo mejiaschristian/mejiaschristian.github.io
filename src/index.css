@@ -28,13 +28,17 @@ html {
 }
 
 main {
-    margin: 15px 20px 0px 20px;
+    margin: 0px 20px 0px 20px;
     width: 750px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+}
+
+.projects {
+    margin-top: 50px;
 }
 
 .contacts {
@@ -48,6 +52,13 @@ main {
 .card {
     max-width: 350px;
     height: 100%;
+    box-shadow: 1px 1px 5px 0px #222831;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 2px 15px 0px #222831;
 }
 
 .card-img-top {
@@ -90,15 +101,15 @@ main {
     transition: all 0.3s ease-in-out;
 }
 
-.table-of-contents a.link-active {
+.table-of-contents a.link-active,
+.email {
     color: var(--color-primary-light);
-    transform: translateY(15px);
 }
 
 @media (width <= 480px) {
     main {
         width: auto;
-        padding-bottom: 80px; /* Prevents the last section from getting trapped under the navbar */
+        padding-bottom: 80px;
     }
 
     .table-of-contents {
@@ -109,7 +120,6 @@ main {
         flex-direction: column;
     }
 
-    /* Modern App-Style Bottom Navigation */
     .mobile-bottom-nav {
         display: flex;
         position: fixed;
@@ -132,7 +142,6 @@ main {
         transition: color 0.3s ease;
     }
 
-    /* Active State for Mobile Links */
     .mobile-bottom-nav a.link-active {
         color: var(--color-primary-light);
     }

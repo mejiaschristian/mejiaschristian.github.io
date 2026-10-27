@@ -1,13 +1,12 @@
 import { NavLink } from "react-router";
 
 function Navbar() {
-    // Reusable function for your active link logic
     const getNavClass = ({ isActive, isPending }) =>
         isPending ? "pending" : isActive ? "link-active" : "";
 
     return (
         <>
-            {/* Desktop View (Sidebar) */}
+            {/* Desktop View */}
             <div className="table-of-contents border-end pe-4">
                 <ul className="list-unstyled">
                     <li>
@@ -33,7 +32,7 @@ function Navbar() {
                 </ul>
             </div>
 
-            {/* Mobile View (Bottom App Bar) */}
+            {/* Mobile View */}
             <nav className="mobile-bottom-nav">
                 <NavLink to="/about" className={getNavClass}>
                     About

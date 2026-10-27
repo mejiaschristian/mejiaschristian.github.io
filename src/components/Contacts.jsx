@@ -7,16 +7,13 @@ function Contacts() {
                     I'm currently open to new opportunities! Feel free to reach
                     out.
                 </p>
+                Email me @ {" "}
+                <a className="email text-decoration-none" href="mailto:xtian.mejias@proton.me">
+                    xtian.mejias@proton.me
+                </a>
             </div>
 
             <div className="d-flex justify-content-center gap-3 mt-4">
-                <a
-                    href="mailto:xtian.mejias@proton.me"
-                    className="btn btn-outline-light"
-                >
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-
                 <a
                     href="https://github.com/mejiaschristian"
                     target="_blank"

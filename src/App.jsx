@@ -15,9 +15,8 @@ function App() {
                 <Route path="projects" element={<Projects />} />
                 <Route path="certifications" element={<Certificates />} />
                 <Route path="contacts" element={<Contacts />} />
+                <Route path="*" element={<NotFound />} />
             </Route>
-
-            <Route path="*" element={<NotFound />} />
         </Routes>
     );
 }
