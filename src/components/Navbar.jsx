@@ -8,25 +8,25 @@ function Navbar() {
         <>
             {/* Desktop View */}
             <div className="table-of-contents border-end pe-4">
-                <ul className="list-unstyled">
+                <ul className="list-unstyled ">
                     <li>
                         <NavLink to="/about" className={getNavClass}>
-                            About
+                            <i class="fa-solid fa-circle-info"></i> About
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/projects" className={getNavClass}>
-                            Projects
+                            <i class="fa-solid fa-briefcase"></i> Projects
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/certifications" className={getNavClass}>
-                            Certifications
+                            <i class="fa-solid fa-graduation-cap"></i> Certifications
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/contacts" className={getNavClass}>
-                            Contacts
+                            <i class="fa-solid fa-address-book"></i> Contacts
                         </NavLink>
                     </li>
                 </ul>
@@ -41,7 +41,7 @@ function Navbar() {
                     Projects
                 </NavLink>
                 <NavLink to="/certifications" className={getNavClass}>
-                    Certificates
+                    Certifications
                 </NavLink>
                 <NavLink to="/contacts" className={getNavClass}>
                     Contacts
