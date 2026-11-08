@@ -44,7 +44,7 @@ function Experience() {
                             >
                                 {stage.skills.map((skill) => (
                                     <li key={skill}>
-                                        <span className="skill-badge m-2" >{skill}</span>
+                                        <span className="card pb-0 mx-2 skill-badge" >{skill}</span>
                                     </li>
                                 ))}
                             </ul>
