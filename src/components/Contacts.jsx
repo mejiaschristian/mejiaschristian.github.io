@@ -1,26 +1,32 @@
 function Contacts() {
     return (
-        <div className="contacts">
-            <div className="section-header">
+        <div className="contacts" data-reveal>
+            <div className="section-header" data-reveal>
                 <h2>Contact Me!</h2>
                 <p>
                     I'm currently open to new opportunities! Feel free to reach
                     out.
                 </p>
-                Email me @ {" "}
-                <a className="email text-decoration-none" href="mailto:xtian.mejias@proton.me">
+                Email me @{" "}
+                <a
+                    className="email text-decoration-none"
+                    href="mailto:xtian.mejias@proton.me"
+                >
                     xtian.mejias@proton.me
                 </a>
             </div>
 
-            <div className="d-flex justify-content-center gap-3 mt-4">
+            <div
+                className="social-links d-flex justify-content-center gap-3 mt-4"
+                data-reveal
+            >
                 <a
                     href="https://github.com/mejiaschristian"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn btn-outline-light"
                 >
-                    <i class="fa-brands fa-github"></i>
+                    <i className="fa-brands fa-github"></i>
                 </a>
 
                 <a
@@ -29,7 +35,7 @@ function Contacts() {
                     rel="noopener noreferrer"
                     className="btn btn-outline-light"
                 >
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                 </a>
 
                 <a
@@ -38,7 +44,7 @@ function Contacts() {
                     rel="noopener noreferrer"
                     className="btn btn-outline-light"
                 >
-                    <i class="fa-brands fa-x-twitter"></i>
+                    <i className="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
             <div className="mt-5 d-flex justify-content-center align-items-center">

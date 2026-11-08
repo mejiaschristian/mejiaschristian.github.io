@@ -1,8 +1,8 @@
 function About() {
     return (
-        <header>
+        <header data-reveal>
             <div className="greetings text-muted mb-3">
-                <h1 className="d-inline">ᜉᜄ᜔ᜊᜆᜒ! </h1>
+                <h1 className="d-inline fs-1">ᜉᜄ᜔ᜊᜆᜒ!</h1>
                 <span className="fst-italic">"Greetings!"</span>
             </div>
             <small>I am</small>
@@ -19,15 +19,13 @@ function About() {
                 <a
                     className="link-info text-decoration-none"
                     href="https://react.dev/"
+                    target="_blank"
                 >
                     React JS
                 </a>
-                . I love react. Been learning it for years yet I still consider
-                myself a beginner, and often get overwhelmed. But, I love the
-                process of bringing ideas to life on the web.{" "}
-                <small className="fst-italic text-muted">
-                    (Even when I don't feel like it.)
-                </small>
+                . While the learning curve is always moving, I genuinely love
+                the challenge of figuring things out and bringing ideas to life
+                on the web.{" "}
             </p>
             <div className="mt-5 d-flex justify-content-center align-items-center">
                 <img src="modbear.webp" alt="Modified Bear" />

@@ -2,8 +2,8 @@ import CertCard from "./ItemCard";
 
 function Certificates() {
     return (
-        <div>
-            <div className="section-header mb-3">
+        <div className="certifications">
+            <div className="section-header mb-3" data-reveal>
                 <h2>Certifications</h2>
                 <small className="text-muted">
                     Professional certifications earned during my academic
@@ -11,7 +11,7 @@ function Certificates() {
                 </small>
             </div>
             <div className="row mt-4">
-                <div className="col-md-6 col-lg-6 mb-3">
+                <div className="col-md-6 col-lg-6 mb-3" data-reveal>
                     <CertCard
                         imgLink="pmi.png"
                         itemTitle="PMI Project Management Ready"
@@ -20,7 +20,7 @@ function Certificates() {
                         projectLink="PMI-Project-Management-Ready.pdf"
                     />
                 </div>
-                <div className="col-md-6 col-lg-6 mb-3">
+                <div className="col-md-6 col-lg-6 mb-3" data-reveal>
                     <CertCard
                         imgLink="java-its.png"
                         itemTitle="Information Technology Specialist in Java"

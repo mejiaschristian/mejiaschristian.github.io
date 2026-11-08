@@ -32,7 +32,8 @@ function ItemCard({
                         className="btn btn-outline-warning w-100"
                         disabled={!isOpenSource}
                     >
-                        View {viewItemName}
+                        <i className="fa-brands fa-github"></i> View{" "}
+                        {viewItemName}
                     </a>
                 ) : (
                     <button
@@ -40,7 +41,8 @@ function ItemCard({
                         className="btn btn-outline-warning w-100"
                         disabled={!isOpenSource}
                     >
-                        View {viewItemName}
+                        <i className="fa-brands fa-github"></i> View{" "}
+                        {viewItemName}
                     </button>
                 )}
             </div>

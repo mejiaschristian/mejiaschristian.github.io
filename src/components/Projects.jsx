@@ -3,7 +3,7 @@ import ProjectCard from "./ItemCard";
 function Projects() {
     return (
         <div className="projects">
-            <div className="section-header mb-3">
+            <div className="section-header mb-3" data-reveal>
                 <h2 id="projects">Projects and Contributions</h2>
                 <small className="text-muted">
                     A curated collection of full-stack web applications, mobile
@@ -14,7 +14,7 @@ function Projects() {
 
             <div className="card-container">
                 <div className="row g-2">
-                    <div className="col-6 col-md-4 col-lg-4 mb-3">
+                    <div className="col-6 col-md-4 col-lg-4 mb-3" data-reveal>
                         <ProjectCard
                             imgLink="QuickCart.png"
                             itemTitle="QuickCart"
@@ -23,7 +23,7 @@ function Projects() {
                             isOpenSource={false}
                         />
                     </div>
-                    <div className="col-6 col-md-4 col-lg-4 mb-3">
+                    <div className="col-6 col-md-4 col-lg-4 mb-3" data-reveal>
                         <ProjectCard
                             imgLink="CartManagementApp.png"
                             itemTitle="Cart Management App"
@@ -33,7 +33,7 @@ function Projects() {
                             projectLink="https://github.com/mejiaschristian/cart-management-app"
                         />
                     </div>
-                    <div className="col-6 col-md-4 col-lg-4 mb-3">
+                    <div className="col-6 col-md-4 col-lg-4 mb-3" data-reveal>
                         <ProjectCard
                             imgLink="DailySavingsCalculator.png"
                             itemTitle="Daily Savings Calculator"
@@ -43,7 +43,7 @@ function Projects() {
                             projectLink="https://github.com/mejiaschristian/daily-savings-calculator"
                         />
                     </div>
-                    <div className="col-6 col-md-4 col-lg-4 mb-3">
+                    <div className="col-6 col-md-4 col-lg-4 mb-3" data-reveal>
                         <ProjectCard
                             imgLink="FreshTrack.png"
                             itemTitle="FreshTrack"
@@ -53,7 +53,7 @@ function Projects() {
                             projectLink="https://github.com/mejiaschristian/freshtrack"
                         />
                     </div>
-                    <div className="col-6 col-md-4 col-lg-4 mb-3">
+                    <div className="col-6 col-md-4 col-lg-4 mb-3" data-reveal>
                         <ProjectCard
                             imgLink="BlueVault.png"
                             itemTitle="NU Blue Vault"
@@ -63,7 +63,7 @@ function Projects() {
                             projectLink="https://github.com/mejiaschristian/blue-vault"
                         />
                     </div>
-                    <div className="col-6 col-md-4 col-lg-4 mb-3">
+                    <div className="col-6 col-md-4 col-lg-4 mb-3" data-reveal>
                         <ProjectCard
                             imgLink="NWSBudgetingApp.png"
                             itemTitle="NWS Budgeting App"

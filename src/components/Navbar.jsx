@@ -11,22 +11,30 @@ function Navbar() {
                 <ul className="list-unstyled ">
                     <li>
                         <NavLink to="/about" className={getNavClass}>
-                            <i class="fa-solid fa-circle-info"></i> About
+                            <i className="fa-solid fa-circle-info"></i> About
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink to="/experience" className={getNavClass}>
+                            <i className="fa-solid fa-clock-rotate-left"></i>{" "}
+                            Experience
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/projects" className={getNavClass}>
-                            <i class="fa-solid fa-briefcase"></i> Projects
+                            <i className="fa-solid fa-briefcase"></i> Projects
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/certifications" className={getNavClass}>
-                            <i class="fa-solid fa-graduation-cap"></i> Certifications
+                            <i className="fa-solid fa-graduation-cap"></i>{" "}
+                            Certifications
                         </NavLink>
                     </li>
                     <li>
                         <NavLink to="/contacts" className={getNavClass}>
-                            <i class="fa-solid fa-address-book"></i> Contacts
+                            <i className="fa-solid fa-address-book"></i>{" "}
+                            Contacts
                         </NavLink>
                     </li>
                 </ul>
@@ -36,6 +44,9 @@ function Navbar() {
             <nav className="mobile-bottom-nav">
                 <NavLink to="/about" className={getNavClass}>
                     About
+                </NavLink>
+                <NavLink to="/experience" className={getNavClass}>
+                    Experience
                 </NavLink>
                 <NavLink to="/projects" className={getNavClass}>
                     Projects
