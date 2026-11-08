@@ -41,7 +41,7 @@ function Navbar() {
             </div>
 
             {/* Mobile View */}
-            <nav className="mobile-bottom-nav">
+            <nav className="mobile-bottom-nav" aria-label="Main navigation">
                 <NavLink to="/about" className={getNavClass}>
                     About
                 </NavLink>
@@ -51,8 +51,12 @@ function Navbar() {
                 <NavLink to="/projects" className={getNavClass}>
                     Projects
                 </NavLink>
-                <NavLink to="/certifications" className={getNavClass}>
-                    Certifications
+                <NavLink
+                    to="/certifications"
+                    className={getNavClass}
+                    aria-label="Certifications"
+                >
+                    Certs
                 </NavLink>
                 <NavLink to="/contacts" className={getNavClass}>
                     Contacts

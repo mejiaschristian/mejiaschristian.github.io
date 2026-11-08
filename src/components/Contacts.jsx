@@ -47,7 +47,7 @@ function Contacts() {
                     <i className="fa-brands fa-x-twitter"></i>
                 </a>
             </div>
-            <div className="mt-5 d-flex justify-content-center align-items-center">
+            <div className="mt-5 d-flex justify-content-center align-items-center" data-reveal>
                 <img src="smiley.webp" alt="smiley" />
             </div>
         </div>

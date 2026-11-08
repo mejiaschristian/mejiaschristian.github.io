@@ -24,8 +24,8 @@ function Experience() {
                 <p className="experience-eyebrow">My development journey</p>
                 <h2 id="experience-title">Learning by building.</h2>
                 <p>
-                    Tools and technologies I’ve explored through
-                    my Information Technology studies.
+                    Tools and technologies I’ve explored through my Information
+                    Technology studies.
                 </p>
             </header>
 

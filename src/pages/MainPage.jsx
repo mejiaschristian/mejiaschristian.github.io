@@ -1,9 +1,22 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Outlet, useLocation } from "react-router";
 import Navbar from "../components/Navbar";
 
 function MainPage() {
     const { pathname } = useLocation();
+    const [showSplash, setShowSplash] = useState(
+        () => !window.matchMedia("(prefers-reduced-motion: reduce)").matches,
+    );
+
+    useEffect(() => {
+        if (!showSplash) {
+            return;
+        }
+
+        const timeout = window.setTimeout(() => setShowSplash(false), 1500);
+
+        return () => window.clearTimeout(timeout);
+    }, [showSplash]);
 
     useEffect(() => {
         if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -37,9 +50,22 @@ function MainPage() {
 
     return (
         <div className="container">
+            {showSplash && (
+                <div className="intro-splash" aria-hidden="true">
+                    <div className="intro-splash-content">
+                        <span className="intro-splash-greeting">
+                            ᜉᜄ᜔ᜊᜆᜒ!
+                        </span>
+                        <span className="intro-splash-translation">
+                            Greetings!
+                        </span>
+                        <span className="intro-splash-rule" />
+                    </div>
+                </div>
+            )}
             <Navbar />
 
-            <main>
+            <main data-reveal>
                 <Outlet />
             </main>
         </div>
