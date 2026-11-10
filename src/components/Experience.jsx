@@ -1,17 +1,26 @@
 const learningStages = [
     {
-        period: "Senior high school – first year IT",
-        title: "Web development basics",
+        period: "Senior high school – first year IT (2023-2024)",
+        title: "Web development and programming fundamentals",
         description:
             "I started learning how websites and simple applications are built.",
-        skills: ["HTML", "CSS", "JavaScript", "PHP", "MySQL", "Android Studio"],
+        skills: [
+            "Python",
+            "Java",
+            "HTML",
+            "CSS",
+            "JavaScript",
+            "PHP",
+            "MySQL",
+            "Android Studio",
+        ],
     },
     {
-        period: "Second–third year IT · Current",
+        period: "Second–third year IT (2025-Current)",
         title: "Frontend and backend",
         description:
             "I’m currently studying React and backend development as part of my IT studies.",
-        skills: ["React", "Node.js", "MongoDB"],
+        skills: ["React.js", "Node.js", "MongoDB"],
     },
 ];
 
@@ -44,7 +53,9 @@ function Experience() {
                             >
                                 {stage.skills.map((skill) => (
                                     <li key={skill}>
-                                        <span className="card pb-0 mx-2 skill-badge" >{skill}</span>
+                                        <span className="skill-badge">
+                                            {skill}
+                                        </span>
                                     </li>
                                 ))}
                             </ul>
