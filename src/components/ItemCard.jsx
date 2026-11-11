@@ -35,13 +35,7 @@ function ItemCard({
                         <i class="fa-solid fa-eye"></i> View {viewItemName}
                     </a>
                 ) : (
-                    <button
-                        href={projectLink}
-                        className="btn btn-outline-warning w-100"
-                        disabled={!isOpenSource}
-                    >
-                        <i class="fa-solid fa-eye"></i> View {viewItemName}
-                    </button>
+                    ""
                 )}
             </div>
         </div>

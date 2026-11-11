@@ -234,7 +234,7 @@ p {
 
 .experience-entry {
     padding: 22px 0;
-    border-top: 1px solid rgb(238 238 238 / 14%);
+    border-top: 1px solid #eeeeee24;
 }
 
 .experience-period {
@@ -250,7 +250,7 @@ p {
 
 .experience-description {
     margin-bottom: 12px;
-    color: rgb(238 238 238 / 72%);
+    color: #eeeeeeb8;
     font-size: 0.9rem;
 }
 

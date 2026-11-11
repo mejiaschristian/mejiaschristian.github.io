@@ -1,6 +1,6 @@
 const learningStages = [
     {
-        period: "Senior high school – first year IT (2023-2024)",
+        period: "Senior high school – first year IT (2022-2025)",
         title: "Web development and programming fundamentals",
         description:
             "I started learning how websites and simple applications are built.",
@@ -17,7 +17,7 @@ const learningStages = [
     },
     {
         period: "Second–third year IT (2025-Current)",
-        title: "Frontend and backend",
+        title: "Full-stack development",
         description:
             "I’m currently studying React and backend development as part of my IT studies.",
         skills: ["React.js", "Node.js", "MongoDB"],
